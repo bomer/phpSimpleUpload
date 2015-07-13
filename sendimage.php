@@ -8,7 +8,7 @@
 
 
 $name=$_POST['name'];
-if($name ){
+if($name || true ){ //Replace name with useful parameter
 	file_put_contents("uploads/".time().$_FILES["image"]["name"] ,file_get_contents($_FILES["image"]["tmp_name"]));
 	$out["result"]="ok";
 	echo json_encode($out);
