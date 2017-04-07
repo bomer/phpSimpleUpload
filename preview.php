@@ -9,7 +9,7 @@ foreach ($files as $key => $value) {
 		unset($files[$key]);
 	}
 	else 
-		echo "<a href='uploads/$value'> <img src='/uploads/$value'> </a>" ;
+		echo "<a href='uploads/$value'> <img src='uploads/$value'> </a>" ;
 }
 // echo json_encode($out);
 
