@@ -9,8 +9,8 @@ foreach ($files as $key => $value) {
 		unset($files[$key]);
 	}
 	else 
-		echo "<a href='/uploads/ " + $value +"'";
+		$out[]=$value;
 }
-
+echo json_encode($out);
 
 ?>
